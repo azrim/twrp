@@ -1,8 +1,8 @@
 env:
     # Telegram
-    TG_CHAT_ID: 
-    TG_TOKEN:
-    PK:
+    TG_CHAT_ID: ENCRYPTED[!8107781823777ce3cb13c02d589f3138ff63def09c79e2d940be63f7cf197141b53ea1784b385e86fac77247dbd43c7e!]
+    TG_TOKEN: ENCRYPTED[!f1537aa51f86e74fc1db77f07a8145d4c5e10507416d2ad40b6b37401b737f1321fa60959e9757d9d6b4b4ba899a9429!]
+    PK: ENCRYPTED[!cb12fd275862b8e3b9fb7f9d83736f689319b5da22338dc7d7a70554014a23458839937bf31a8e92a4daf864c84363df!]
     # Cirrus Specific Vars (Do *NOT* Change)
     CIRRUS_SHELL: bash
 
@@ -14,5 +14,5 @@ task:
       cpu: 8
       memory: 20G
 
-Build_script:
-  - bash build.sh
+  Build_script:
+      - curl -sL https://raw.githubusercontent.com/azrim/twrp/main/build.sh | bash

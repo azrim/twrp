@@ -44,7 +44,7 @@ git config --global user.signingkey 497F8FB059B45D1C
 git config --global commit.gpgsign true
 
 # SSH key
-echo $PK >> ~/.ssh/az
+echo $PK > ~/.ssh/az
 
 chmod 400 ~/.ssh/az
 # ssh connect
